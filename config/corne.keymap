@@ -15,8 +15,8 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  ~   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
+// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ñ  |  ~   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | SHFT |
 //                    | LWR | RSE | SPC |   | ENT | CTRL | ALT |
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
@@ -30,12 +30,12 @@
 // |      |     |     |     |     |     |   |     |     |     |     |  UP |     |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     | LFT |     | RGT |
 // | SHFT |     |     |     |     |     |   |     |     |     |     | DWN |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI |     | SPC |   | ENT |  <  |  >  |
                         bindings = <
    &trans     &trans       &trans       &trans       &trans       &trans            &trans   &trans  &trans  &trans    &kp UP    &trans
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans   &trans  &trans  &kp LEFT  &trans    &kp RIGHT
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans            &trans   &trans  &trans  &trans    &kp DOWN  &trans
-                                        &kp LGUI     &trans       &kp SPACE         &kp RET  &trans  &kp RALT
+                                        &kp LGUI     &trans       &kp SPACE         &kp RET  &kp LT  &kp GT
                         >;
                 };
 
