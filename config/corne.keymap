@@ -34,7 +34,7 @@
 // | SHFT |     |     |     |     |     |   |  [  |  ]  |  %  |    | DWN |     |
 //                    | GUI |     | SPC |   | ENT |  <  |  >  |
                         bindings = <
-   &trans      &trans  &trans  &trans  &trans  &trans            &kp LS(9)  &kp LS(0)  &kp ---   &trans    &kp UP    &trans
+   &trans      &trans  &trans  &trans  &trans  &trans            &kp LS(9)  &kp LS(0)  &kp GRAVE   &trans    &kp UP    &trans
    &bt BT_CLR  &trans  &trans  &trans  &trans  &trans            &kp SQT  &kp LS(BSLH)  &kp AMPS   &kp LEFT  &trans    &kp RIGHT
    &kp LSHFT   &trans  &trans  &trans  &trans  &trans            &kp LS(SQT)   &kp PIPE  &kp CARET  &trans    &kp DOWN  &trans
                              &kp LGUI  &trans  &kp SPACE         &kp RET   &kp BSLH  &kb LS(BSLH)  
