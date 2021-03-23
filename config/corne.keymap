@@ -32,9 +32,9 @@
 // | SHFT |     |     |     |     |     |   |  [  |  ]  |  %  |    | DWN |     |
 //                    | GUI |     | SPC |   | ENT |  <  |  >  |
                         bindings = <
-   &trans      &trans  &trans  &trans  &trans  &trans            &kp KP_LPAR  &kp KP_RPAR  &kp KP_PIPE   &trans       &kp KP_UP    &trans
-   &bt BT_CLR  &trans  &trans  &trans  &trans  &trans            &kp KP_LBRC  &kp KP_RBRC  &kp KP_AMPS   &kp KP_LEFT  &trans       &kp KP_RIGHT
-   &kp LSHFT   &trans  &trans  &trans  &trans  &trans            &kp KP_LBKT  &kp KP_RBKT  &kp KP_CARET  &trans       &kp KP_DOWN  &trans
+   &trans      &trans  &trans  &trans  &trans  &trans            &kp LPAR  &kp RPAR  &kp PIPE   &trans       &kp KP_UP    &trans
+   &bt BT_CLR  &trans  &trans  &trans  &trans  &trans            &kp LBRC  &kp RBRC  &kp AMPS   &kp LEFT  &trans       &kp KP_RIGHT
+   &kp LSHFT   &trans  &trans  &trans  &trans  &trans            &kp LBKT  &kp RBKT  &kp CARET  &trans       &kp KP_DOWN  &trans
                              &kp LGUI  &trans  &kp SPACE         &kp RET   &kp KP_BSLH  &kp KP_PIPE 
                         >;
                 };
