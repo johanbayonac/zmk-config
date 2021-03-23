@@ -26,15 +26,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | BTCLR | mute |     | Home | Pgup | ScrUp |   |  (  |  )  | "|" |     |  UP | DEL |
-// | CTRL  | V-   | V+  | End  | Pgdw | ScrDn |   |  {  |  }  |  &  | LFT |     | RGT |
-// | SHFT  | Ply  | Psa | stp  | Prev | Next  |   |  [  |  ]  |  %  |     | DWN |     |
-//                      | GUI  |      | SPC   |   | ENT |  <  |  >  |
+// |      |     |     |     |     |     |   |  (  |  )  | "|" |     |  UP |     |
+// | BTCLR|     |     |     |     |     |   |  {  |  }  |  &  | LFT |     | RGT |
+// | SHFT |     |     |     |     |     |   |  [  |  ]  |  %  |     | DWN |     |
+//                    | GUI |     | SPC |   | ENT |  <  |  >  |
                         bindings = <
-   &bt BT_CLR   &kp C_MUTE    &trans        &kp HOME    &kp PG_UP   &kp K_SCROLL_UP        &kp LS(N8)  &kp LS(N9)    &kp GRAVE     &trans    &kp UP    &kp DEL
-   &kp LCTRL    &kp C_VOL_DN  &kp C_VOL_UP  &kp END     &kp PG_DN   &kp K_SCROLL_DOWN      &kp SQT     &kp BSLH      &kp CARET     &kp LEFT  &trans    &kp RIGHT
-   &kp LSHFT    &kp C_PLAY    &kp C_PAUSE   &kp C_STOP  &kp C_PREV  &kp C_NEXT             &kp LS(SQT) &kp PIPE      &kp LS(N5)    &trans    &kp DOWN  &trans
-                                            &kp LGUI    &trans      &kp SPACE              &kp ENTER   &kp LS(COMMA) &kp LS(DOT)
+   &trans      &trans  &trans  &trans  &trans  &trans        &kp LS(N8)  &kp LS(N9)    &kp GRAVE     &trans    &kp UP    &trans
+   &bt BT_CLR  &trans  &trans  &trans  &trans  &trans        &kp SQT     &kp BSLH      &kp CARET     &kp LEFT  &trans    &kp RIGHT
+   &kp LSHFT   &trans  &trans  &trans  &trans  &trans        &kp LS(SQT) &kp PIPE      &kp LS(N5)    &trans    &kp DOWN  &trans
+                             &kp LGUI  &trans  &kp SPACE     &kp ENTER   &kp NON_US_BSLH      &kp LS(NON_US_BSLH)
                         >;
                 };
 
