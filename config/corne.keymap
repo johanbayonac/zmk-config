@@ -37,7 +37,7 @@
    &trans      &trans  &trans  &trans  &trans  &trans            &kp LPAR  &kp RPAR  &kp PIPE   &trans    &kp UP    &trans
    &bt BT_CLR  &trans  &trans  &trans  &trans  &trans            &kp LBRC  &kp RBRC  &kp AMPS   &kp LEFT  &trans    &kp RIGHT
    &kp LSHFT   &trans  &trans  &trans  &trans  &trans            &kp LBKT  &kp RBKT  &kp CARET  &trans    &kp DOWN  &trans
-                             &kp LGUI  &trans  &kp SPACE         &kp RET   &kp KC_LABK  &kp PIPE 
+                             &kp LGUI  &trans  &kp SPACE         &kp RET   &kp LABK  &kp PIPE 
                         >;
                 };
 
