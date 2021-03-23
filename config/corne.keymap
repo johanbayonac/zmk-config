@@ -21,7 +21,7 @@
 //                    | LWR | RSE | SPC |   | ENT | CTRL | ALT |
                         bindings = <
    &kp ESC   &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
-   &kp TAB   &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp GRAVE
+   &kp TAB   &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp LBKT
    &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &mo 1  &mo 2  &kp SPACE   &kp ENTER &kp LCTRL &kp RALT
                         >;
@@ -36,7 +36,7 @@
    &bt BT_CLR   &kp C_MUTE    &trans        &kp HOME    &kp PG_UP   &kp K_SCROLL_UP        &kp LS(N8)  &kp LS(N9)    &kp GRAVE     &trans    &kp UP    &kp DEL
    &kp LCTRL    &kp C_VOL_DN  &kp C_VOL_UP  &kp END     &kp PG_DN   &kp K_SCROLL_DOWN      &kp SQT     &kp BSLH      &kp CARET     &kp LEFT  &trans    &kp RIGHT
    &kp LSHFT    &kp C_PLAY    &kp C_PAUSE   &kp C_STOP  &kp C_PREV  &kp C_NEXT             &kp LS(SQT) &kp PIPE      &kp LS(N5)    &trans    &kp DOWN  &trans
-                                            &kp LGUI    &trans      &kp SPACE              &kp ENTER   &kp LS(COMMA) &kp LS(DOT)
+                                            &kp LGUI    &trans      &kp SPACE              &kp ENTER   &kp RBKT &kp LS(RBKT)
                         >;
                 };
 
