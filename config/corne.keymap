@@ -45,15 +45,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |     |     |     |     |   |  (  |  )  |  &  |     |     | DEL  |
-// | CTRL |     |     |     |     |     |   |  {  |  }  | "|" |     | UP  |      |
-// | SHFT |     |     |     |     |     |   |  [  |  ]  |  !  | LFT | DWN | RGT  | // TODO: Fix this row when &mkp is committed
+// |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   |  (  |  )  |  &  |     |     | DEL  |
+// |  F7  |  F8 |  F9 | F10 | F11 | F12 |   |  {  |  }  | "|" |     | UP  |      |
+// |  F13 | F14 | F15 | F16 | F17 | F18 |   |  [  |  ]  |  !  | LFT | DWN | RGT  | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | SPC |   |  <  |  >  |  =  |
                         bindings = <
-   &kp  ESC  &kp EXCL  &trans  &trans    &trans    &trans      &kp LPAR  &kp RPAR   &kp AMPS   &trans     &trans    &kp DEL
-   &kp LCTRL &trans    &trans  &trans    &trans    &trans      &kp LBKT  &kp RBKT   &kp PIPE   &trans     &kp UP    &trans 
-   &kp LSHFT &trans    &trans  &trans    &trans    &trans      &kp LBRC  &kp RBRC   &kp EXCL   &kp LEFT   &kp DOWN  &kp RIGHT
-                                   &kp LGUI &trans &kp SPACE   &kp LT    &kp GT    &kp KP_EQUAL
+   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6        &kp LPAR  &kp RPAR   &kp AMPS   &trans     &trans    &kp DEL
+   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12       &kp LBKT  &kp RBKT   &kp PIPE   &trans     &kp UP    &trans 
+   &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18       &kp LBRC  &kp RBRC   &kp EXCL   &kp LEFT   &kp DOWN  &kp RIGHT
+                                   &kp LGUI &trans &kp SPACE  &kp LT    &kp GT     &kp KP_EQUAL
                         >;
                 };
         };
