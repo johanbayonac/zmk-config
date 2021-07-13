@@ -36,9 +36,9 @@
 // |      | VOL- | END  |     |     |      |   |  #  |  $  |  ,  |  1  |  2  |  3  |
 //                      | GUI |     | Paus |   |  =  |  .  |  0  |
                         bindings = <
-   &kp ESC  &kp K_VOL_UP  &kp HOME  &trans   &trans    &trans              &kp KP_PLUS  &kp KP_MULTIPLY   &kp AT     &kp N7  &kp N8  &kp N9
-   &trans   &bt K_MUTE    &trans    &trans   &trans    &trans              &kp MINUS    &kp KP_DIVIDE     &kp PRCNT  &kp N4  &kp N5  &kp N6
-   &trans   &kp K_VOL_DN  &kp END   &trans   &trans    &trans              &kp HASH     &kp DLLR          &KP_COMMA  &kp N1  &kp N2  &kp N3
+   &kp ESC  &kp K_VOL_UP  &kp HOME  &trans   &trans    &trans              &kp KP_PLUS  &kp KP_MULTIPLY   &kp AT        &kp N7  &kp N8  &kp N9
+   &trans   &bt K_MUTE    &trans    &trans   &trans    &trans              &kp MINUS    &kp KP_DIVIDE     &kp PRCNT     &kp N4  &kp N5  &kp N6
+   &trans   &kp K_VOL_DN  &kp END   &trans   &trans    &trans              &kp HASH     &kp DLLR          &kp KP_COMMA  &kp N1  &kp N2  &kp N3
                                     &kp LGUI &trans    &kp K_PLAY_PAUSE    &kp EQUAL    &kp KP_DOT        &kp N0
                         >;
                 };
