@@ -18,14 +18,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  "  | BKSP |
-// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ?   |
+// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ´   |
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  -  | SHFT |
 //                    | LWR | RSE | SPC |   | ENT |  =  | ALT |
                         bindings = <
-   &kp TAB    &kp Q  &kp W  &kp F  &kp P  &kp B       &kp J   &kp L        &kp U      &kp Y    &SQT      &kp BSPC
-   &kp LCTRL  &kp A  &kp R  &kp S  &kp T  &kp G       &kp M   &kp N        &kp E      &kp I    &kp O     &kp FSLH
+   &kp TAB    &kp Q  &kp W  &kp F  &kp P  &kp B       &kp J   &kp L        &kp U      &kp Y    &trans    &kp BSPC
+   &kp LCTRL  &kp A  &kp R  &kp S  &kp T  &kp G       &kp M   &kp N        &kp E      &kp I    &kp O     &kp LBKT
    &kp LSHFT  &kp Z  &kp X  &kp C  &kp D  &kp V       &kp K   &kp H        &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                          &mo 1  &mo 2  &kp SPACE     &kp RET &Kp EQUAL  &kp RALT
+                          &mo 1  &mo 2  &kp SPACE     &kp ENTER  &Kp EQUAL  &kp RALT
                         >;
                 };
                 lower_layer {
