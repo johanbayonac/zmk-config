@@ -51,7 +51,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  ESC  &kp EXCL  &trans  &trans    &trans    &trans      &kp CARET &kp AMPS  &trans     &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans    &trans  &trans    &trans    &trans      &transS   &trans    &kp LBKT   &kp RBKT &kp PIPE &kp GRAVE
+   &kp LCTRL &trans    &trans  &trans    &trans    &trans      &trans    &trans    &kp LBKT   &kp RBKT &kp PIPE &kp GRAVE
    &kp LSHFT &trans    &trans  &trans    &trans    &trans      &trans    &trans    &trans     &trans   &kp BSLH &kp TILDE
                                    &kp LGUI &trans &kp SPACE   &kp RET &trans &kp RALT
                         >;
