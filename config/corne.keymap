@@ -17,7 +17,7 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  "  | BKSP |
+// | TAB  |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Ñ  | BKSP |
 // | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ´   |
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  -  | SHFT |
 //                    | LWR | RSE | SPC |   | ENT |  =  | ALT |
