@@ -36,7 +36,7 @@
 //                    |  x  |LGUI |Pause|   |  <  |  >  |  =  |
                         bindings = <
    &kp ESC  &kp K_VOL_UP  &kp HOME  &kp INSERT &kp TILDE  &kp CARET          &kp LPAR  &kp RPAR  &kp AMPS     &trans     &trans    &kp DEL  
-   &trans   &bt K_MUTE    &trans    &trans     &bt BSLH   &bt DQT            &kp LBRC  &kp RBRC  &kp PIPE     &trans     &kp UP    &trans  
+   &trans   &kp K_MUTE    &trans    &trans     &bt BSLH   &bt DQT            &kp LBRC  &kp RBRC  &kp PIPE     &trans     &kp UP    &trans  
    &trans   &kp K_VOL_DN  &kp END   &trans     &trans     &trans             &kp LBKT  &kp RBKT  &kp EXCL     &kp LEFT   &kp DOWN  &kp RIGHT  
                                     &trans     &kp LGUI   &kp K_PLAY_PAUSE   &kp LT    &kp GT    &kp KP_EQUAL
                         >;
@@ -49,7 +49,7 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  ESC  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp ESC   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans    &trans  &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
    &kp LSHFT &trans    &trans  &trans    &trans    &trans      &trans    &trans    &trans          &trans   &kp BSLH &kp TILDE
                                    &kp LGUI &trans &kp SPACE   &kp RET &trans &kp RALT
