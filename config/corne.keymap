@@ -31,15 +31,15 @@
                 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | F5    | F10  | F11  | COM  | UCOM | Home  |   |  (  |  )  | "|" |  @  |  UP | DEL |
-// | TAB   | V-   | V+   | EBKP | DBKP | End   |   |  {  |  }  |  &  | LFT |  #  | RGT |
-// | LS F5 | mute | Ply  | stp  | Prev | Next  |   |  [  |  ]  |  %  |  !  | DWN |  $  |
-//                       |      | CAPS | PSCRN |   |  \  |  <  |  >  |
+// | F5    | F10  | F11  |      |      |       |   |  (  |  )  | "|" |  @  |  UP | DEL |
+// |       | V-   |      |      |      |       |   |  {  |  }  |  &  | LFT |  #  | RGT |
+// |       | mute | Ply  |      |      |       |   |  [  |  ]  |  %  |  !  | DWN |  $  |
+//                       |      |      |       |   |  \  |  <  |  >  |
                         bindings = <
-   &kp F5      &kp F10       &kp F11           &kp RC(LS(C))  &kp RC(LS(U))  &kp HOME     &kp LS(N8)     &kp LS(N9)  &kp GRAVE   &kp RA(Q)  &kp UP      &kp DEL
-   &kp TAB     &kp C_VOL_DN  &kp C_VOL_UP      &kp RC(LS(E))  &kp RC(LS(D))  &kp END      &kp SQT        &kp BSLH    &kp CARET   &kp LEFT   &kp LS(N3)  &kp RIGHT
-   &kp LS(F5)  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_STOP     &kp C_PREV     &kp C_NEXT   &kp LS(SQT)    &kp PIPE    &kp LS(N5)  &kp EXCL   &kp DOWN    &kp LS(N4)
-                                               &trans         &kp CAPS       &kp PSCRN    &kp BACKSLASH  &kp LS(LT)  &kp LS(N60)
+   &kp F5  &kp F10       &kp F11           &trans  &trans  &trans     &kp LS(N8)     &kp LS(N9)  &kp GRAVE   &kp RA(Q)  &kp UP      &kp DEL
+   &trans  &kp C_VOL_DN  &trans            &trans  &trans  &trans     &kp SQT        &kp BSLH    &kp CARET   &kp LEFT   &kp LS(N3)  &kp RIGHT
+   &trans  &kp C_MUTE    &kp C_PLAY_PAUSE  &trans  &trans  &trans     &kp LS(SQT)    &kp PIPE    &kp LS(N5)  &kp EXCL   &kp DOWN    &kp LS(N4)
+                                           &trans  &trans  &trans     &kp BACKSLASH  &kp LS(LT)  &kp LS(N60)
                         >;
                 };
 
