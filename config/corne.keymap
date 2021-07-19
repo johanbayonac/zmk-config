@@ -85,7 +85,7 @@ adjust_layer {
 //       | RST  | BLDR |      |      |      |      |                |     |     |     |     | BLDR | RST  |
 //       | BTCLR| BT0  | BT1  | BT2  | BT3  | BT4  |                | BT4 | BT3 | BT2 | BT1 | BT0  | BTCLR|
 //       |ON-OFF|      |      |      | ANI+ | ANI- |------     -----| Vel+| Vel-|     |     |      |      |    
-//       ----------------------------|      | COL  |  QWE |   | COL |     |     |--------------------------
+//       ----------------------------| COL  |      |  QWE |   | COL |     |     |--------------------------
 //                                   ---------------------     ------------------
                        
 bindings = <
@@ -93,7 +93,7 @@ bindings = <
    &reset  &bootloader  &none        &none        &none        &none                     &none        &none        &none        &none       &bootloader     &reset
    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
    &rgb_ug RGB_TOG   &none  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_EFF   &rgb_ug RGB_EFR           &rgb_ug RGB_SPI   &rgb_ug RGB_SPD   &none   &none   &none   &none
-                                                             &none &none &to QWE          &to DEF &none &none
+                                                             &to DEF  &none &to QWE          &to DEF &none &none
                         >;
                 };
                  
@@ -112,7 +112,7 @@ bindings = <
    &kp ESC   &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
    &kp LCTRL &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp LBKT
    &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                     &mo LWR  &mo RSE  &kp SPACE   &kp ENTER &mo ADJ &kp RALT
+                     &mo LWR  &mo RSE  &kp SPACE   &kp ENTER  &mo ADJ  &kp RALT
                         >;
                 };
         
