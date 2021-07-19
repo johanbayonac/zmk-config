@@ -64,14 +64,14 @@
                 
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
-// | RST | BLDR |     |     |     |     |     |   |     |     |     |     |     | BLDR | RST |
-//       | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
-//       |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// | RST | BLDR |      |     |     |     |     |   |     |     |     |     |     | BLDR | RST |
+//       | BTCLR| BT0  | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
+//       | Blue |ON/OFF| ANI+| ANI-| Vel+| Vel-|   |     |     |     |     |     |      |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
    &reset &bootloader  &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &bootloader &reset
           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
-          &rgb_ug RGB_COLOR_HSB(232, 78, 47)       &rgb_ug RGB_TOG        &none        &none        &none        &none              &none        &none        &none        &none        &none         &none
+          &rgb_ug RGB_COLOR_HSB(232, 78, 47)       &rgb_ug RGB_TOG        RGB_EFF        RGB_EFR        RGB_SPI        RGB_SPD              &none        &none        &none        &none        &none         &none
                                                                     &trans &none &trans   &trans &none &trans
                         >;
                 };
