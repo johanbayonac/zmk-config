@@ -20,13 +20,17 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Ñ  | BKSP |
-// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ´   |
-// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  -  | SHFT |
-//                    | LWR | RSE | SPC |   | ENT |  =  | ALT |
-                        bindings = <
+default_layer {
+
+//     ---------------------------------------------------------------------------------------------
+//     | TAB  |  Q  |  W  |  F  |  P  |  B  |                 |  J  |  L  |  U  |  Y  |  Ñ  | BKSP |
+//     | CTRL |  A  |  R  |  S  |  T  |  G  |                 |  M  |  N  |  E  |  I  |  O  |  ´   |
+//     | SHFT |  Z  |  X  |  C  |  D  |  V  |------     ------|  K  |  H  |  ,  |  .  |  -  | SHFT |
+//     -------------------------| LWR | RSE | SPC |     | ENT |  =  | ALT |-------------------------
+//                              -------------------     -------------------
+
+bindings = <
+
    &kp TAB     &kp Q   &kp W   &kp F    &kp P    &kp B       &kp J      &kp L    &kp U      &kp Y    &kp SEMI  &kp BSPC
    &kp LCTRL   &kp A   &kp R   &kp S    &kp T    &kp G       &kp M      &kp N    &kp E      &kp I    &kp O     &kp LBKT
    &kp LSHFT   &kp Z   &kp X   &kp C    &kp D    &kp V       &kp K      &kp H    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
@@ -34,13 +38,17 @@
                         >;
                 };
                 
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// | ESC  | VOL+ | HOME |     |  \  |  "   |   |  +  |  *  |  @  |  7  |  8  |  9  |
-// | Prev | Mute | Next |     |  ^  |  ~   |   |  -  |  /  |  %  |  4  |  5  |  6  |
-// | Mayu | VOL- | END  |     |  '  |      |   |  #  |  $  |  ,  |  1  |  2  |  3  |
-//                      |     |     | Paus |   |  =  |  .  |  0  |
-                        bindings = <
+lower_layer {
+
+//      ---------------------------------------------------------------------------------------/////--
+//      | ESC  | VOL+ | HOME |     |  \  |  "   |                |  +  |  *  |  @  |  7  |  8  |  9  |
+//      | Prev | Mute | Next |     |  ^  |  ~   |                |  -  |  /  |  %  |  4  |  5  |  6  |
+//      | Mayu | VOL- | END  |     |  '  |      |------     -----|  #  |  $  |  ,  |  1  |  2  |  3  |
+//      ---------------------------|     |      | Paus |   |  =  |  .  |  0  |------------------------
+//                                 --------------------     ------------------
+                        
+bindings = <
+
    &kp ESC     &kp C_VOL_UP   &kp HOME    &none     &kp NON_US_BSLH  &kp AT              &kp KP_PLUS   &kp KP_MULTIPLY   &kp RA(Q)   &kp N7  &kp N8  &kp N9
    &kp C_PREV  &kp C_MUTE     &kp C_NEXT  &none     &kp LS(N6)       &kp TILDE           &kp KP_MINUS  &kp KP_DIVIDE     &kp PRCNT   &kp N4  &kp N5  &kp N6
    &kp CAPS    &kp C_VOL_DN   &kp END     &none     &kp APOS         &none               &kp HASH      &kp DLLR          &kp COMMA   &kp N1  &kp N2  &kp N3
@@ -48,13 +56,17 @@
                         >;
                 };
 
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   |  (  |  )  | "|" |  ?  |     | DEL  |
-// |  F7  |  F8 |  F9 | F10 | F11 | F12 |   |  {  |  }  |  &  |     | UP  |      |
-// |  F13 | F14 | F15 | F16 | F17 | F18 |   |  [  |  ]  |  !  | LFT | DWN | RGT  | // TODO: Fix this row when &mkp is committed
-//                    | GUI |     | SPC |   |  =  |  <  |  >  |
-                        bindings = <
+raise_layer {
+
+//       ---------------------------------------------------------------------------------------------
+//       |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |                 |  (  |  )  | "|" |  ?  |     | DEL  |
+//       |  F7  |  F8 |  F9 | F10 | F11 | F12 |                 |  {  |  }  |  &  |     | UP  |      |
+//       |  F13 | F14 | F15 | F16 | F17 | F18 |------     ------|  [  |  ]  |  !  | LFT | DWN | RGT  | 
+//       -------------------------| GUI |     | SPC |     |  =  |  <  |  >  |-------------------------
+//                                -------------------     -------------------
+                        
+bindings = <
+
    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6        &kp LS(N8)       &kp LS(N9)           &kp GRAVE    &kp LS(FSLH)  &none     &kp DEL
    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12       &kp SQT          &kp BSLH             &kp CARET    &none         &kp UP    &none  
    &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18       &kp LS(SQT)      &kp PIPE             &kp LS(N5)   &kp LEFT      &kp DOWN  &kp RIGHT
@@ -62,13 +74,17 @@
                         >;
                 };
                 
-                adjust_layer {
-// -----------------------------------------------------------------------------------------
-// | RST  | BLDR |      |      |      |      |   |     |     |     |     | BLDR | RST  |
-// | BTCLR| BT0  | BT1  | BT2  | BT3  | BT4  |   | BT4 | BT3 | BT2 | BT1 | BT0  | BTCLR|
-// |ON-OFF|      |      |      | ANI+ | ANI- |   | Vel+| Vel-|     |     |      |      |    
-//                      |      |      |      |   |     |     |     |
-                        bindings = <
+adjust_layer {
+
+//       --------------------------------------------------------------------------------------------------
+//       | RST  | BLDR |      |      |      |      |                |     |     |     |     | BLDR | RST  |
+//       | BTCLR| BT0  | BT1  | BT2  | BT3  | BT4  |                | BT4 | BT3 | BT2 | BT1 | BT0  | BTCLR|
+//       |ON-OFF|      |      |      | ANI+ | ANI- |------     -----| Vel+| Vel-|     |     |      |      |    
+//       ----------------------------|      |      |      |   |     |     |     |--------------------------
+//                                   ---------------------     ------------------
+                       
+bindings = <
+
    &reset  &bootloader  &none        &none        &none        &none                     &none        &none        &none        &none       &bootloader     &reset
    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
    &rgb_ug RGB_TOG   &none   &none   &none   &rgb_ug RGB_EFF   &rgb_ug RGB_EFR           &rgb_ug RGB_SPI   &rgb_ug RGB_SPD   &none   &none   &none   &none
