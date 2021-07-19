@@ -6,12 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-                                                    image: zmkfirmware/zmk-build-arm:2.5
+   image: zmkfirmware/zmk-build-arm:2.5
     name: Build
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Cache west modules
+      - name: Cache west modulesz
         uses: actions/cache@v2
         env:
           cache-name: cache-zephyr-modules
