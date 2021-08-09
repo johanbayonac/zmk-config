@@ -16,6 +16,7 @@
 #define RSE 2
 #define ADJ 3
 #define QWE 4
+#define DEV 5
 
 / {
         keymap {
@@ -113,6 +114,25 @@ bindings = <
    &kp LCTRL &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp LBKT
    &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                             &mo LWR  &mo RSE  &kp SPACE   &kp ENTER  &mo ADJ  &kp RALT
+                        >;
+                };
+		
+devorak_layer {
+        label = " DEVORAK";
+        
+//       --------------------------------------              ---------------------------------------
+//       | ESC  |  "  |  <  |  >  |  P  |  Y  |              |  F  |  G   |  C  |  R  |  L  | BKSP |
+//       | CTRL |  A  |  O  |  E  |  U  |  I  |              |  D  |  H   |  T  |  N  |  S  |  ´   |
+//       | SHFT |  ,  |  Q  |  J  |  K  |  X  | ----     ----|  B  |  M   |  W  |  V  |  Z  | SHFT | 
+//       -------------------------| LWR | RSE | SPC |   | ENT | ADJ | ALT |------------------------
+//                                ------------------     -------------------
+                       
+bindings = <
+
+   &kp ESC   &kp AT     &kp NON_US_BSLH  &kp LS(NON_US_BSLH)   &kp P  &kp Y                  &kp F  &kp G  &kp C  &kp R  &kp L  &kp BSPC
+   &kp LCTRL &kp A      &kp O            &kp E                 &kp U  &kp I                  &kp D  &kp H  &kp T  &kp N  &kp S  &kp LBKT
+   &kp LSHFT &kp COMMA  &kp Q            &kp J                 &kp K  &kp X                  &kp B  &kp M  &kp W  &kp V  &kp Z  &kp RSHFT
+                                     &mo LWR               &mo RSE  &kp SPACE      &kp ENTER  &mo ADJ  &kp RALT
                         >;
                 };
         
